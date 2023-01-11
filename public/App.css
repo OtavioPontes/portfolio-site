@@ -1,0 +1,60 @@
+:root{
+    /* Colors */
+    --dark: #272727; 
+    --purple: #6100ff; 
+    --white: #fafafa; 
+    --blue: #5dbaef; 
+    --pink: #f863ab; 
+    --gradient: linear-gradient(90deg, #16171e 0%, #181d2d 47.8%, #16171e 100%);
+
+    /* Text Styles */
+    --headline1: 300 6rem/normal Fira Code; 
+    --headline2: 300 3.75rem/normal Fira Code; 
+    --headline3: 400 3rem/normal Fira Code; 
+    --headline4: 400 2.125rem/normal Fira Code; 
+    --headline5: 400 1.5rem/normal Fira Code; 
+    --headline6: 500 1.25rem/normal Fira Code; 
+    --subtitle1: 400 1rem/normal Fira Code; 
+    --subtitle2: 500 0.875rem/normal Fira Code; 
+    --body1: 400 0.875rem/normal Fira Code; 
+    --body2: 400 0.875rem/normal Fira Code; 
+    --button: 500 0.875rem/normal Fira Code; 
+    --caption: 400 0.75rem/normal Fira Code; 
+    --overline: 400 0.625rem/normal Fira Code; 
+}
+
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin: 0px;
+    width: max-content;
+    color: var(--white);
+    font-family: 'Fira Code';
+   
+}
+
+h1, h2, h3, h4, h5, h6{
+ margin: 0px;
+}
+
+h1{
+    font: var(--headline1);
+}
+h2{
+    font: var(--headline2);
+}
+h3{
+    font: var(--headline3);
+}
+h4{
+    font: var(--headline4);
+}
+h5{
+    font: var(--headline5);
+}
+h6{
+    font: var(--headline6);
+}

@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    background-image: var(--gradient);
+    justify-content: flex-start;
+    padding: 1rem 20rem 0 20rem;
+}
+
+.name{
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.textSection{
+    margin-top: 3rem;
+    text-align: justify;
+    line-height: 4rem;
+}
+
+.title{
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--blue);
+    
+  }
+.text{
+    color: var(--white);
+    font: var(--headline5);
+}
+
+.textHighlighted{
+    color: var(--pink);
+    font: var(--headline4);
+}
+.textHighlightedBlue{
+    color: var(--blue);
+    font: var(--headline4);
+}
+
+.email{
+    margin: 1rem -5rem 0 0;
+    align-self: flex-end;
+    letter-spacing: 6px;
+    text-shadow: 1px 4px 20px var(--purple);
+}

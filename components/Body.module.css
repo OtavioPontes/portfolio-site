@@ -1,0 +1,141 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url("../assets/background-personal-site.svg");
+    background-position: top; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+    padding: 1rem 20rem 0 20rem;
+    
+}
+
+.titleMobile{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    align-items: flex-end;
+    padding-top: 8rem;
+    
+}
+
+.titleWeb{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    align-items: flex-end;
+    padding-top: 8rem;
+}
+
+.phone{
+    margin-left: 3rem;
+}
+
+.mobileText{
+    margin-top: 3rem;
+    align-self: flex-start;
+    font: var(--headline5);
+    text-align: start;
+}
+.webText{
+    margin-top: 3rem;
+    align-self: flex-end;
+    font: var(--headline5);
+    text-align: end;
+}
+
+
+.textSection{
+    margin-top: 3rem;
+    text-align: justify;
+}
+
+.title{
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--blue);
+    
+  }
+.text{
+    color: var(--white);
+    font: var(--headline4);
+}
+
+.textHighlighted{
+    color: var(--pink);
+    font: var(--headline4);
+}
+.textHighlightedBlue{
+    color: var(--blue);
+    font: var(--headline4);
+}
+
+.textTitle{
+    margin-right: 1rem;
+    color: var(--white);
+    font: var(--headline3);
+}
+
+.textTitleHighlighted{
+    margin-right: 1rem;
+    color: var(--pink);
+    font: var(--headline3);
+}
+.textTitleHighlightedBlue{
+    margin-right: 1rem;
+    color: var(--blue);
+    font: var(--headline3);
+}
+
+.floatButtonLinkedin{
+    position:fixed;
+    bottom:180px;
+	right:20px;
+}
+
+.floatButtonGithub{
+    position:fixed;
+	bottom:40px;
+	right:20px;
+}
+
+.nihongo{
+    position:absolute;
+    height: max-content;
+	top:60vh;
+	left:50px;
+    font: var(--headline4);
+    letter-spacing: 10px;
+    writing-mode: vertical-rl;
+    text-shadow: 1px 4px 20px var(--purple);
+}
+
+.footerText{
+  position: fixed;
+  width: 50vw;
+  text-align: center;
+  bottom: 0;
+    font: var(--headline6);
+    text-shadow: 1px 4px 20px var(--purple);
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    /* For tablets: */
+   .floatButtonGithub {  
+    visibility: hidden;
+	
+	
+}
+
+   .floatButtonLinkedin { 
+    visibility: hidden;
+	
+	
+}
+   .nihongo {visibility: hidden;}
+  }
