@@ -8,8 +8,8 @@ import github from "../assets/github.png";
 
 function Body() {
   return (
-    <>
-      <div className={styles.container}>
+    <div className={styles.container}>
+      <div className={styles.content}>
         <div className={styles.titleMobile}>
           <p>
             <span className={styles.textTitle}>Stack</span>{" "}
@@ -66,7 +66,7 @@ function Body() {
           <p>Designed & Built with ❤ by Otávio Pontes</p>
         </footer>
       </div>
-    </>
+    </div>
   );
 }
 

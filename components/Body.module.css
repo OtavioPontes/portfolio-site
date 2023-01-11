@@ -9,15 +9,22 @@
     background-position: top; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; 
-    padding: 1rem 20rem 0 20rem;
+
     
 }
 
+.content{
+    width: 60vw;
+}
+
 .titleMobile{
+
     display: flex;
+    text-align: start;
     flex-direction: row;
     align-self: flex-start;
     align-items: flex-end;
+    justify-content: flex-start;
     padding-top: 8rem;
     
 }
@@ -27,6 +34,7 @@
     flex-direction: row;
     align-self: flex-end;
     align-items: flex-end;
+    justify-content: flex-end;
     padding-top: 8rem;
 }
 
@@ -39,12 +47,15 @@
     align-self: flex-start;
     font: var(--headline5);
     text-align: start;
+    justify-content: flex-start;
 }
 .webText{
+   
     margin-top: 3rem;
     align-self: flex-end;
     font: var(--headline5);
     text-align: end;
+    justify-content: flex-end;
 }
 
 
