@@ -10,6 +10,7 @@ import maid from "../assets/MaidApp.jpg";
 import marvel from "../assets/MarvelApp.jpg";
 import melivra from "../assets/MelivraApp.jpg";
 import ctservice from "../assets/CT Service.jpg";
+import pethero from "../assets/PetheroApp.jpg";
 
 function Body() {
   return (
@@ -40,6 +41,16 @@ function Body() {
               alt="App MeLivra"
             />
             <p className={styles.appSubtitle}>App Me Livra</p>
+          </div>
+          <div className={styles.app}>
+            <Image
+              src={pethero}
+              width={250}
+              height={500}
+              unoptimized={true}
+              alt="App Pet Hero"
+            />
+            <p className={styles.appSubtitle}>App Pet Hero</p>
           </div>
           <div className={styles.app}>
             <Image
