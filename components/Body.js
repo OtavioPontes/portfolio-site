@@ -93,6 +93,7 @@ function Body() {
             <p className={styles.appSubtitle}>App Café</p>
           </div>
         </div>
+        <div className={styles.spacer}></div>
         <div className={styles.titleWeb}>
           <p>
             <span className={styles.textTitle}>Stack</span>{" "}

@@ -8,21 +8,25 @@
     
 }
 
+    .spacer{
+        height: 2rem;
+    }
+    .space{
+        height: 4rem;
+    }
+
 .name{
-  margin-top: 3rem;
   text-align: center;
 }
 
 .textSection{
     width: 60vw;
-    margin-top: 8rem;
     text-align: justify;
     line-height: 4rem;
 }
 
 .title{
     text-align: center;
-    margin-top: 2rem;
     color: var(--blue);
     
   }
@@ -43,7 +47,7 @@
 .divEmail{
     display: flex;
     align-self: flex-end;
-    margin: 2rem 12rem 6rem 0;
+    margin: 2rem 10rem 6rem 0;
 }
 
 .email{
@@ -54,8 +58,17 @@
 
 @media only screen and (max-width: 768px) {
     /* For tablets: */
+
+    .title{
+        font: var(--headline5);
+        
+      }
+      .name{
+        font: var(--headline6);
+      }
+
     .email{
-        font: var(--caption);
+        font: var(--overline);
     }
     .divEmail{
         align-self: center;
@@ -63,19 +76,20 @@
     }
 
     .textSection{
-        width: 80vw;    
+        width: 80vw;
+        line-height: 2rem;    
     }
 
     .text{
-        font: var(--body);
+        font: var(--body2);
     
     }
     
     .textHighlighted{
-        font: var(--headline6);
+        font: var(--body1);
     }
     .textHighlightedBlue{
-        font: var(--headline6);
+        font: var(--body1);
     } 
     
   }
