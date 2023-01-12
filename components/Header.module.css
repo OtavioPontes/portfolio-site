@@ -1,95 +1,105 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    align-items: center;
-    background-image: var(--gradient);
-    justify-content: flex-start;
-    
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+  background-image: var(--gradient);
+  justify-content: flex-start;
 }
 
-    .spacer{
-        height: 2rem;
-    }
-    .space{
-        height: 4rem;
-    }
+.avatar:hover {
+  filter: drop-shadow(0px 5px 5px var(--blue));
+}
 
-.name{
+.spacer {
+  height: 2rem;
+}
+.space {
+  height: 4rem;
+}
+
+.name {
   text-align: center;
 }
-
-.textSection{
-    width: 60vw;
-    text-align: justify;
-    line-height: 4rem;
+.name:hover {
+  text-shadow: 1px 4px 20px var(--purple);
 }
 
-.title{
-    text-align: center;
-    color: var(--blue);
-    
-  }
-.text{
-    color: var(--white);
-    font: var(--headline6);
+.textSection {
+  width: 60vw;
+  text-align: justify;
+  line-height: 4rem;
 }
 
-.textHighlighted{
-    color: var(--pink);
-    font: var(--headline5);
+.title {
+  text-align: center;
+  color: var(--blue);
 }
-.textHighlightedBlue{
-    color: var(--blue);
-    font: var(--headline5);
+.title:hover {
+  text-shadow: 1px 4px 20px var(--blue);
 }
-
-.divEmail{
-    display: flex;
-    align-self: flex-end;
-    margin: 2rem 10rem 6rem 0;
+.text {
+  color: var(--white);
+  font: var(--headline6);
 }
 
-.email{
-    font: var(--body2);
-    letter-spacing: 6px;
-    text-shadow: 1px 4px 20px var(--purple);
+.textHighlighted {
+  color: var(--pink);
+  font: var(--headline5);
+}
+.textHighlightedBlue {
+  color: var(--blue);
+  font: var(--headline5);
+}
+
+.divEmail {
+  display: flex;
+  align-self: flex-end;
+  margin: 2rem 10rem 6rem 0;
+}
+
+.email {
+  color: var(--white);
+  font: var(--body2);
+  letter-spacing: 6px;
+  text-shadow: 1px 4px 20px var(--purple);
+}
+
+.email:hover {
+  font: var(--headline6);
 }
 
 @media only screen and (max-width: 768px) {
-    /* For tablets: */
+  /* For tablets: */
 
-    .title{
-        font: var(--headline5);
-        
-      }
-      .name{
-        font: var(--headline6);
-      }
-
-    .email{
-        font: var(--overline);
-    }
-    .divEmail{
-        align-self: center;
-        margin-right: 0;
-    }
-
-    .textSection{
-        width: 80vw;
-        line-height: 2rem;    
-    }
-
-    .text{
-        font: var(--body2);
-    
-    }
-    
-    .textHighlighted{
-        font: var(--body1);
-    }
-    .textHighlightedBlue{
-        font: var(--body1);
-    } 
-    
+  .title {
+    font: var(--headline5);
   }
+  .name {
+    font: var(--headline6);
+  }
+
+  .email {
+    font: var(--overline);
+  }
+  .divEmail {
+    align-self: center;
+    margin-right: 0;
+  }
+
+  .textSection {
+    width: 80vw;
+    line-height: 2rem;
+  }
+
+  .text {
+    font: var(--body2);
+  }
+
+  .textHighlighted {
+    font: var(--body1);
+  }
+  .textHighlightedBlue {
+    font: var(--body1);
+  }
+}

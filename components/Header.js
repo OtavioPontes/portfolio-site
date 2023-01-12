@@ -6,13 +6,15 @@ import image from "../assets/avatar.png";
 function Header() {
   return (
     <div className={styles.container}>
-      <Image
-        src={image}
-        width={180}
-        height={180}
-        priority
-        alt="Pixel art of the author"
-      />
+      <div className={styles.avatar}>
+        <Image
+          src={image}
+          width={180}
+          height={180}
+          priority
+          alt="Pixel art of the author"
+        />
+      </div>
       <div className={styles.spacer}></div>
       <h4 className={styles.name}>Otávio Pontes</h4>
       <div className={styles.spacer}></div>
@@ -36,7 +38,9 @@ function Header() {
         </h6>
       </div>
       <div className={styles.divEmail}>
-        <p className={styles.email}>otavio.pontes1103@gmail.com</p>
+        <a className={styles.email} href="mailto:otavio.pontes1103@gmail.com">
+          otavio.pontes1103@gmail.com
+        </a>
       </div>
     </div>
   );
