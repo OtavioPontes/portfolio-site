@@ -8,7 +8,7 @@ import github from "../assets/github.png";
 import coffee from "../assets/CoffeeApp.jpg";
 import maid from "../assets/MaidApp.jpg";
 import marvel from "../assets/MarvelApp.jpg";
-import melivra from "../assets/MelivraApp.jpg";
+import melivra from "../assets/MelivraApp.png";
 import ctservice from "../assets/CT Service.jpg";
 import pethero from "../assets/PetheroApp.jpg";
 
@@ -35,7 +35,7 @@ function Body() {
           <div className={styles.app}>
             <Image
               src={melivra}
-              width={250}
+              width={0}
               height={500}
               unoptimized={true}
               alt="App MeLivra"
@@ -45,7 +45,7 @@ function Body() {
           <div className={styles.app}>
             <Image
               src={pethero}
-              width={250}
+              width={0}
               height={500}
               unoptimized={true}
               alt="App Pet Hero"
@@ -55,7 +55,7 @@ function Body() {
           <div className={styles.app}>
             <Image
               src={ctservice}
-              width={250}
+              width={0}
               height={500}
               unoptimized={true}
               alt="App CT Service"
@@ -65,7 +65,7 @@ function Body() {
           <div className={styles.app}>
             <Image
               src={marvel}
-              width={250}
+              width={0}
               height={500}
               unoptimized={true}
               alt="App Marvel"
@@ -75,7 +75,7 @@ function Body() {
           <div className={styles.app}>
             <Image
               src={maid}
-              width={250}
+              width={0}
               height={500}
               unoptimized={true}
               alt="App Maid Café"
@@ -85,7 +85,7 @@ function Body() {
           <div className={styles.app}>
             <Image
               src={coffee}
-              width={250}
+              width={0}
               height={500}
               unoptimized={true}
               alt="App Café"
