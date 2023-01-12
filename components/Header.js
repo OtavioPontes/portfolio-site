@@ -26,8 +26,7 @@ function Header() {
           <span className={styles.text}>and</span>{" "}
           <span className={styles.textHighlighted}>Web Systems</span>
           <span className={styles.text}>
-            . Also a Design Enthusiast. Currently, building apps at Arbit &
-            Lello.
+            . Also a Design Enthusiast. Currently, building apps at
           </span>{" "}
           <span className={styles.textHighlightedBlue}>Arbit & Lello</span>
           {"."}
