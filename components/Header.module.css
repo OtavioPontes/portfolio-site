@@ -28,26 +28,26 @@
   }
 .text{
     color: var(--white);
-    font: var(--headline5);
+    font: var(--headline6);
 }
 
 .textHighlighted{
     color: var(--pink);
-    font: var(--headline4);
+    font: var(--headline5);
 }
 .textHighlightedBlue{
     color: var(--blue);
-    font: var(--headline4);
+    font: var(--headline5);
 }
 
 .divEmail{
     display: flex;
     align-self: flex-end;
-    margin: 3rem 12rem 3rem 0;
+    margin: 2rem 12rem 6rem 0;
 }
 
 .email{
-    
+    font: var(--body2);
     letter-spacing: 6px;
     text-shadow: 1px 4px 20px var(--purple);
 }
@@ -55,11 +55,27 @@
 @media only screen and (max-width: 768px) {
     /* For tablets: */
     .email{
-        font: var(--body2);
+        font: var(--caption);
     }
     .divEmail{
         align-self: center;
         margin-right: 0;
     }
+
+    .textSection{
+        width: 80vw;    
+    }
+
+    .text{
+        font: var(--body);
+    
+    }
+    
+    .textHighlighted{
+        font: var(--headline6);
+    }
+    .textHighlightedBlue{
+        font: var(--headline6);
+    } 
     
   }

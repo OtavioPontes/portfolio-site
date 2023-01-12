@@ -29,6 +29,7 @@ function Body() {
           <span className={styles.textHighlighted}>Apps</span>{" "}
           <span className={styles.text}>with Flutter, Dart, Firebase & 💙</span>
         </p>
+        <div className={styles.spacer}></div>
         <div className={styles.apps}>
           <div className={styles.app}>
             <Image
@@ -105,19 +106,14 @@ function Body() {
           target="_"
           className={styles.floatButtonLinkedin}
         >
-          <Image
-            src={linkedin}
-            width={100}
-            height={100}
-            alt="Link p/ Linkedin"
-          />
+          <Image src={linkedin} width={80} height={80} alt="Link p/ Linkedin" />
         </a>
         <a
           href="https://github.com/OtavioPontes"
           target="_"
           className={styles.floatButtonGithub}
         >
-          <Image src={github} width={100} height={100} alt="Link p/ Github" />
+          <Image src={github} width={80} height={80} alt="Link p/ Github" />
         </a>
         <div className={styles.space}></div>
         <footer className={styles.footerText}>

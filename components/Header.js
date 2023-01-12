@@ -13,8 +13,8 @@ function Header() {
         priority
         alt="Pixel art of the author"
       />
-      <h3 className={styles.name}>Otávio Pontes</h3>
-      <h2 className={styles.title}>&lt;Frontend Developer/&gt;</h2>
+      <h4 className={styles.name}>Otávio Pontes</h4>
+      <h3 className={styles.title}>&lt;Frontend Developer/&gt;</h3>
       <div>
         <h6 className={styles.textSection}>
           <span className={styles.text}>

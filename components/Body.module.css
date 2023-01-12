@@ -16,7 +16,11 @@
 }
 
 .space{
-    padding-bottom: 20rem;
+    height:  25rem;
+}
+
+.spacer{
+    height:  1rem;
 }
 
 .titleMobile{
@@ -74,7 +78,7 @@
   }
 .text{
     color: var(--white);
-    font: var(--headline4);
+    font: var(--headline5);
 }
 
 .textHighlighted{
@@ -89,23 +93,23 @@
 .textTitle{
     margin-right: 1rem;
     color: var(--white);
-    font: var(--headline3);
+    font: var(--headline4);
 }
 
 .textTitleHighlighted{
     margin-right: 1rem;
     color: var(--pink);
-    font: var(--headline3);
+    font: var(--headline4);
 }
 .textTitleHighlightedBlue{
     margin-right: 1rem;
     color: var(--blue);
-    font: var(--headline3);
+    font: var(--headline4);
 }
 
 .floatButtonLinkedin{
     position:fixed;
-    bottom:180px;
+    bottom:160px;
 	right:40px;
 }
 
@@ -120,7 +124,7 @@
     height: max-content;
 	top:60vh;
 	left:50px;
-    font: var(--headline4);
+    font: var(--headline5);
     letter-spacing: 10px;
     writing-mode: vertical-rl;
     text-shadow: 1px 4px 20px var(--purple);
@@ -154,16 +158,65 @@
 
 @media only screen and (max-width: 768px) {
     /* For tablets: */
-   .floatButtonGithub {  
-    visibility: hidden;
+
+    .space{
+    height: 5rem;
+    }
+
+   .floatButtonGithub { 
+   margin-top: 3rem; 
+   position: relative;
+   display: flex;
+   justify-content: center;
+   bottom: 0;
+   right: 0;
 	
 	
 }
 
    .floatButtonLinkedin { 
-    visibility: hidden;
+    margin-top: 10rem; 
+    position: relative;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
 	
 	
 }
    .nihongo {visibility: hidden;}
+
+   .titleMobile{
+    font: var(--headline5);
+    
+}
+
+.titleWeb{
+    font: var(--headline5);
+}
+
+
+.mobileText{
+
+    font: var(--headline6);
+  
+}
+.webText{
+   
+    font: var(--headline6);
+   
+}
+
+.text{
+    font: var(--headline6);
+}
+
+.textHighlighted{
+    font: var(--headline5);
+}
+.textHighlightedBlue{
+    font: var(--headline5);
+}
+
+
   }
