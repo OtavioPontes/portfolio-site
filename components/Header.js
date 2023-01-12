@@ -33,7 +33,9 @@ function Header() {
           {"."}
         </h6>
       </div>
-      <p className={styles.email}>otavio.pontes1103@gmail.com</p>
+      <div className={styles.divEmail}>
+        <p className={styles.email}>otavio.pontes1103@gmail.com</p>
+      </div>
     </div>
   );
 }

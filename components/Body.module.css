@@ -1,7 +1,7 @@
 .container{
     display: flex;
     flex-direction: column;
-    height: 200vh;
+    height: max-content;
     width: 100vw;
     align-items: center;
     justify-content: flex-start;
@@ -9,8 +9,7 @@
     background-position: top; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; 
-
-    
+    padding-bottom: 40rem;
 }
 
 .content{
@@ -104,13 +103,13 @@
 .floatButtonLinkedin{
     position:fixed;
     bottom:180px;
-	right:20px;
+	right:40px;
 }
 
 .floatButtonGithub{
     position:fixed;
 	bottom:40px;
-	right:20px;
+	right:40px;
 }
 
 .nihongo{
@@ -133,7 +132,22 @@
     text-shadow: 1px 4px 20px var(--purple);
 }
 
+.apps{
+    margin-top: 3rem;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 10fr));
+    grid-gap: 8rem 10rem;
+}
 
+.app{
+    text-align: center;
+}
+
+.appSubtitle{
+    font: var(--headline6);
+}
 
 @media only screen and (max-width: 768px) {
     /* For tablets: */

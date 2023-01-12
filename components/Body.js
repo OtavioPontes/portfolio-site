@@ -5,6 +5,11 @@ import phone from "../assets/phone.png";
 import laptop from "../assets/laptop.png";
 import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
+import coffee from "../assets/CoffeeApp.jpg";
+import maid from "../assets/MaidApp.jpg";
+import marvel from "../assets/MarvelApp.jpg";
+import melivra from "../assets/MelivraApp.jpg";
+import ctservice from "../assets/CT Service.jpg";
 
 function Body() {
   return (
@@ -24,6 +29,58 @@ function Body() {
           <span className={styles.textHighlighted}>Apps</span>{" "}
           <span className={styles.text}>with Flutter, Dart, Firebase & 💙</span>
         </p>
+        <div className={styles.apps}>
+          <div className={styles.app}>
+            <Image
+              src={melivra}
+              width={250}
+              height={500}
+              unoptimized={true}
+              alt="App MeLivra"
+            />
+            <p className={styles.appSubtitle}>App Me Livra</p>
+          </div>
+          <div className={styles.app}>
+            <Image
+              src={ctservice}
+              width={250}
+              height={500}
+              unoptimized={true}
+              alt="App CT Service"
+            />
+            <p className={styles.appSubtitle}>App CT Service</p>
+          </div>
+          <div className={styles.app}>
+            <Image
+              src={marvel}
+              width={250}
+              height={500}
+              unoptimized={true}
+              alt="App Marvel"
+            />
+            <p className={styles.appSubtitle}>App Marvel</p>
+          </div>
+          <div className={styles.app}>
+            <Image
+              src={maid}
+              width={250}
+              height={500}
+              unoptimized={true}
+              alt="App Maid Café"
+            />
+            <p className={styles.appSubtitle}>App Maid Café</p>
+          </div>
+          <div className={styles.app}>
+            <Image
+              src={coffee}
+              width={250}
+              height={500}
+              unoptimized={true}
+              alt="App Café"
+            />
+            <p className={styles.appSubtitle}>App Café</p>
+          </div>
+        </div>
         <div className={styles.titleWeb}>
           <p>
             <span className={styles.textTitle}>Stack</span>{" "}
