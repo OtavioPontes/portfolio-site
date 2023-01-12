@@ -34,6 +34,7 @@
 
 .titleMobile:hover {
   transform: translateX(10px);
+  transition: all 0.3s ease 0s;
 }
 
 .titleWeb {
@@ -46,6 +47,7 @@
 
 .titleWeb:hover {
   transform: translateX(-10px);
+  transition: all 0.3s ease 0s;
 }
 
 .phone {
@@ -135,6 +137,7 @@
   font: var(--headline4);
   cursor: default;
   transform: translateX(-15px);
+  transition: all 0.3s ease 0s;
 }
 
 .footerText {
@@ -149,6 +152,7 @@
 .footerText:hover {
   cursor: default;
   font: var(--headline5);
+  transition: all 0.3s ease 0s;
 }
 
 .apps {
@@ -167,6 +171,7 @@
 .app:hover {
   transform: translateY(-15px);
   color: var(--pink);
+  transition: all 0.3s ease 0s;
 }
 
 .appSubtitle {

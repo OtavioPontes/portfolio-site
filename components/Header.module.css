@@ -9,6 +9,7 @@
 
 .avatar:hover {
   filter: drop-shadow(0px 5px 5px var(--blue));
+  transition: all 0.3s ease 0s;
 }
 
 .spacer {
@@ -23,6 +24,7 @@
 }
 .name:hover {
   text-shadow: 1px 4px 20px var(--purple);
+  transition: all 0.3s ease 0s;
 }
 
 .textSection {
@@ -37,6 +39,7 @@
 }
 .title:hover {
   text-shadow: 1px 4px 20px var(--blue);
+  transition: all 0.3s ease 0s;
 }
 .text {
   color: var(--white);
@@ -67,6 +70,7 @@
 
 .email:hover {
   font: var(--headline6);
+  transition: all 0.3s ease 0s;
 }
 
 @media only screen and (max-width: 768px) {
