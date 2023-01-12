@@ -9,11 +9,14 @@
     background-position: top; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; 
-    padding-bottom: 40rem;
 }
 
 .content{
     width: 60vw;
+}
+
+.space{
+    padding-bottom: 20rem;
 }
 
 .titleMobile{
@@ -124,10 +127,10 @@
 }
 
 .footerText{
-  position: fixed;
-  width: 50vw;
-  text-align: center;
-  bottom: 0;
+    position: relative;
+    align-content: center;
+    text-align: center;
+    bottom: 0;
     font: var(--headline6);
     text-shadow: 1px 4px 20px var(--purple);
 }

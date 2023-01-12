@@ -119,6 +119,7 @@ function Body() {
         >
           <Image src={github} width={100} height={100} alt="Link p/ Github" />
         </a>
+        <div className={styles.space}></div>
         <footer className={styles.footerText}>
           <p>Designed & Built with ❤ by Otávio Pontes</p>
         </footer>
