@@ -77,6 +77,7 @@
   /* For tablets: */
 
   .title {
+    width: 100vw;
     font: var(--headline5);
   }
   .name {
@@ -85,14 +86,17 @@
 
   .email {
     font: var(--overline);
+    word-break: break-all;
   }
   .divEmail {
+    padding: 0rem 2rem 0rem 2rem;
+    justify-content: center;
     align-self: center;
     margin-right: 0;
+    margin-left: 0;
   }
 
   .textSection {
-    width: 80vw;
     line-height: 2rem;
   }
 

@@ -186,6 +186,13 @@
   opacity: 90%;
 }
 
+.image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
 @media only screen and (max-width: 768px) {
   /* For tablets: */
   .spacer {
@@ -217,11 +224,14 @@
   }
 
   .titleMobile {
+    text-align: center;
+
     font: var(--headline5);
   }
 
   .titleWeb {
     font: var(--headline5);
+    text-align: center;
   }
 
   .mobileText {

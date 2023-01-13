@@ -35,8 +35,8 @@ function Body() {
           <div className={styles.app}>
             <Image
               src={melivra}
-              width={0}
-              height={500}
+              priority
+              className={styles.image}
               unoptimized={true}
               alt="App MeLivra"
             />
@@ -45,8 +45,8 @@ function Body() {
           <div className={styles.app}>
             <Image
               src={pethero}
-              width={0}
-              height={500}
+              priority
+              className={styles.image}
               unoptimized={true}
               alt="App Pet Hero"
             />
@@ -55,8 +55,8 @@ function Body() {
           <div className={styles.app}>
             <Image
               src={ctservice}
-              width={0}
-              height={500}
+              priority
+              className={styles.image}
               unoptimized={true}
               alt="App CT Service"
             />
@@ -65,8 +65,8 @@ function Body() {
           <div className={styles.app}>
             <Image
               src={marvel}
-              width={0}
-              height={500}
+              priority
+              className={styles.image}
               unoptimized={true}
               alt="App Marvel"
             />
@@ -75,8 +75,8 @@ function Body() {
           <div className={styles.app}>
             <Image
               src={maid}
-              width={0}
-              height={500}
+              priority
+              className={styles.image}
               unoptimized={true}
               alt="App Maid Café"
             />
@@ -85,8 +85,8 @@ function Body() {
           <div className={styles.app}>
             <Image
               src={coffee}
-              width={0}
-              height={500}
+              priority
+              className={styles.image}
               unoptimized={true}
               alt="App Café"
             />
