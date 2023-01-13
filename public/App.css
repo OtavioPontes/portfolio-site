@@ -1,3 +1,12 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+
+/* From Public Directory */
+@font-face {
+  font-family: "Fira Code";
+  src: url("/fonts/Fira_Code.ttf");
+}
+
 :root {
   /* Colors */
   --dark: #272727;
