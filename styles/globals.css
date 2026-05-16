@@ -1,86 +1,91 @@
-:root {
-  /* Colors */
-  --dark: #272727;
-  --purple: #6100ff;
-  --white: #fafafa;
-  --blue: #5dbaef;
-  --pink: #f863ab;
-  --gradient: linear-gradient(90deg, #16171e 0%, #181d2d 47.8%, #16171e 100%);
-  --bg: #16171e;
+@import "tailwindcss";
 
-  /* Text Styles */
-  --headline1: 300 clamp(3rem, 8vw, 6rem) / 1.1 var(--font-fira);
-  --headline2: 300 clamp(2.25rem, 5vw, 3.75rem) / 1.1 var(--font-fira);
-  --headline3: 400 clamp(2rem, 4vw, 3rem) / 1.2 var(--font-fira);
-  --headline4: 400 clamp(1.5rem, 3vw, 2.125rem) / 1.25 var(--font-fira);
-  --headline5: 400 clamp(1.125rem, 2vw, 1.5rem) / 1.4 var(--font-fira);
-  --headline6: 500 clamp(1rem, 1.6vw, 1.25rem) / 1.5 var(--font-fira);
-  --subtitle1: 400 1rem / 1.5 var(--font-fira);
-  --subtitle2: 500 0.875rem / 1.5 var(--font-fira);
-  --body1: 400 0.875rem / 1.6 var(--font-fira);
-  --body2: 400 0.875rem / 1.6 var(--font-fira);
-  --button: 500 0.875rem / 1.5 var(--font-fira);
-  --caption: 400 0.75rem / 1.5 var(--font-fira);
-  --overline: 400 0.625rem / 1.5 var(--font-fira);
-}
+@theme {
+  --color-dark: #272727;
+  --color-purple: #6100ff;
+  --color-white: #fafafa;
+  --color-blue: #5dbaef;
+  --color-pink: #f863ab;
+  --color-bg: #16171e;
 
-* {
-  box-sizing: border-box;
-}
+  --font-fira: var(--font-fira-next), "Fira Code", monospace;
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  background-color: var(--bg);
-  color: var(--white);
-}
+  --text-h1: clamp(3rem, 8vw, 6rem);
+  --text-h1--line-height: 1.1;
+  --text-h1--font-weight: 300;
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
+  --text-h2: clamp(2.25rem, 5vw, 3.75rem);
+  --text-h2--line-height: 1.1;
+  --text-h2--font-weight: 300;
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+  --text-h3: clamp(2rem, 4vw, 3rem);
+  --text-h3--line-height: 1.2;
+  --text-h3--font-weight: 400;
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
+  --text-h4: clamp(1.5rem, 3vw, 2.125rem);
+  --text-h4--line-height: 1.25;
+  --text-h4--font-weight: 400;
+
+  --text-h5: clamp(1.125rem, 2vw, 1.5rem);
+  --text-h5--line-height: 1.4;
+  --text-h5--font-weight: 400;
+
+  --text-h6: clamp(1rem, 1.6vw, 1.25rem);
+  --text-h6--line-height: 1.5;
+  --text-h6--font-weight: 500;
+
+  --text-body: 0.875rem;
+  --text-body--line-height: 1.6;
+
+  --text-overline: 0.625rem;
+  --text-overline--line-height: 1.5;
+
+  --background-image-site-gradient: linear-gradient(
+    90deg,
+    #16171e 0%,
+    #181d2d 47.8%,
+    #16171e 100%
+  );
+  --background-image-personal: url("../assets/background-personal-site.svg");
 }
 
-h1 {
-  font: var(--headline1);
-}
-h2 {
-  font: var(--headline2);
-}
-h3 {
-  font: var(--headline3);
-}
-h4 {
-  font: var(--headline4);
-}
-h5 {
-  font: var(--headline5);
-}
-h6 {
-  font: var(--headline6);
-}
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: var(--color-bg);
+    color: var(--color-white);
+    font-family: var(--font-fira);
+  }
 
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    transition-duration: 0.01ms !important;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
   }
 }
