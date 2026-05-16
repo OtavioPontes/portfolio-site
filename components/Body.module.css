@@ -1,40 +1,36 @@
 .container {
+  position: relative;
   display: flex;
   flex-direction: column;
-  height: max-content;
-  width: 100vw;
+  width: 100%;
   align-items: center;
   justify-content: flex-start;
+  padding: 4rem 1.5rem 6rem;
   background-image: url("../assets/background-personal-site.svg");
-  background-position: top; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: top;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
 .content {
-  width: 60vw;
-}
-
-.space {
-  height: 25rem;
-}
-
-.spacer {
-  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 70rem;
+  gap: 4rem;
 }
 
 .titleMobile {
   display: flex;
-  text-align: start;
   flex-direction: row;
   align-self: flex-start;
   align-items: flex-end;
-  justify-content: flex-start;
+  gap: 1.5rem;
+  transition: transform 0.3s ease;
 }
 
 .titleMobile:hover {
   transform: translateX(10px);
-  transition: all 0.3s ease 0s;
 }
 
 .titleWeb {
@@ -42,43 +38,33 @@
   flex-direction: row;
   align-self: flex-end;
   align-items: flex-end;
-  justify-content: flex-end;
+  gap: 1.5rem;
+  transition: transform 0.3s ease;
 }
 
 .titleWeb:hover {
   transform: translateX(-10px);
-  transition: all 0.3s ease 0s;
 }
 
-.phone {
-  margin-left: 3rem;
+.phone,
+.laptop {
+  display: flex;
 }
 
 .mobileText {
-  margin-top: 3rem;
   align-self: flex-start;
-  font: var(--headline5);
   text-align: start;
-  justify-content: flex-start;
+  max-width: 100%;
+  margin-top: -2rem;
 }
+
 .webText {
-  margin-top: 3rem;
   align-self: flex-end;
-  font: var(--headline5);
   text-align: end;
-  justify-content: flex-end;
+  max-width: 100%;
+  margin-top: -2rem;
 }
 
-.textSection {
-  margin-top: 3rem;
-  text-align: justify;
-}
-
-.title {
-  text-align: center;
-  margin-top: 2rem;
-  color: var(--blue);
-}
 .text {
   color: var(--white);
   font: var(--headline5);
@@ -88,173 +74,178 @@
   color: var(--pink);
   font: var(--headline4);
 }
+
 .textHighlightedBlue {
   color: var(--blue);
   font: var(--headline4);
 }
 
 .textTitle {
-  margin-right: 1rem;
   color: var(--white);
   font: var(--headline4);
 }
 
 .textTitleHighlighted {
-  margin-right: 1rem;
   color: var(--pink);
   font: var(--headline4);
 }
+
 .textTitleHighlightedBlue {
-  margin-right: 1rem;
   color: var(--blue);
   font: var(--headline4);
 }
 
-.floatButtonLinkedin {
-  position: fixed;
-  bottom: 160px;
-  right: 40px;
-}
-
-.floatButtonGithub {
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-}
-
-.nihongo {
-  position: absolute;
-  height: max-content;
-  top: 60vh;
-  left: 50px;
-  font: var(--headline5);
-  letter-spacing: 10px;
-  writing-mode: vertical-rl;
-  text-shadow: 1px 4px 20px var(--purple);
-}
-
-.nihongo:hover {
-  font: var(--headline4);
-  cursor: default;
-  transform: translateX(-15px);
-  transition: all 0.3s ease 0s;
-}
-
-.footerText {
-  position: relative;
-  align-content: center;
-  text-align: center;
-  bottom: 0;
-  font: var(--headline6);
-  text-shadow: 1px 4px 20px var(--purple);
-}
-
-.footerText:hover {
-  cursor: default;
-  font: var(--headline5);
-  transition: all 0.3s ease 0s;
-}
-
 .apps {
-  margin-top: 3rem;
-  justify-items: center;
-  align-items: center;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 10fr));
-  grid-gap: 8rem 10rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 3rem;
+  margin: 1rem 0;
 }
 
 .app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
   text-align: center;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .app:hover {
-  transform: translateY(-15px);
+  transform: translateY(-10px);
   color: var(--pink);
-  transition: all 0.3s ease 0s;
+}
+
+.imageWrapper {
+  width: 100%;
+  max-width: 220px;
+  aspect-ratio: 1 / 1;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.image {
+  object-fit: cover;
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute !important;
+  inset: 0;
 }
 
 .appSubtitle {
   font: var(--headline6);
 }
 
+.nihongo {
+  position: absolute;
+  top: 30%;
+  left: 1.5rem;
+  font: var(--headline5);
+  letter-spacing: 10px;
+  writing-mode: vertical-rl;
+  text-shadow: 1px 4px 20px var(--purple);
+  transition: transform 0.3s ease;
+  pointer-events: none;
+}
+
+.socialButtons {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 10;
+}
+
+.floatButtonLinkedin,
+.floatButtonGithub {
+  display: flex;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.floatButtonLinkedin:hover,
 .floatButtonGithub:hover {
-  opacity: 90%;
+  opacity: 0.9;
+  transform: scale(1.05);
 }
 
-.floatButtonLinkedin:hover {
-  opacity: 90%;
+.footerText {
+  text-align: center;
+  font: var(--headline6);
+  text-shadow: 1px 4px 20px var(--purple);
+  margin-top: 4rem;
+  transition: font 0.3s ease;
 }
 
-.image {
-  object-fit: contain;
-  width: 100% !important;
-  position: relative !important;
-  height: unset !important;
+.footerText:hover {
+  cursor: default;
+  font: var(--headline5);
 }
 
-@media only screen and (max-width: 768px) {
-  /* For tablets: */
-  .spacer {
-    height: 3rem;
-  }
-  .space {
-    height: 5rem;
-  }
-
-  .floatButtonGithub {
-    margin-top: 2rem;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    bottom: 0;
-    right: 0;
-  }
-
-  .floatButtonLinkedin {
-    margin-top: 10rem;
-    position: relative;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-  }
+@media (max-width: 1024px) {
   .nihongo {
-    visibility: hidden;
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 3rem 1rem 5rem;
   }
 
-  .titleMobile {
-    text-align: center;
-
-    font: var(--headline5);
+  .content {
+    gap: 3rem;
   }
 
+  .titleMobile,
   .titleWeb {
-    font: var(--headline5);
+    align-self: center;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    gap: 1rem;
   }
 
-  .mobileText {
-    font: var(--headline6);
-  }
+  .mobileText,
   .webText {
-    font: var(--headline6);
+    align-self: center;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .apps {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 2rem;
+  }
+
+  .socialButtons {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3rem;
   }
 
   .text {
     font: var(--headline6);
   }
 
-  .textHighlighted {
-    font: var(--headline5);
-  }
+  .textHighlighted,
   .textHighlightedBlue {
     font: var(--headline5);
   }
+}
 
+@media (max-width: 480px) {
   .apps {
-    margin-top: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 10fr));
-    grid-gap: 2rem 10rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .textTitle,
+  .textTitleHighlighted,
+  .textTitleHighlightedBlue {
+    font: var(--headline5);
   }
 }

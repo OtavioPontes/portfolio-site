@@ -1,18 +1,19 @@
-import styles from "../public/App.css";
+import "../styles/globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import { Fira_Code } from "next/font/google";
 
-import { Fira_Code } from "@next/font/google";
-
-// If loading a variable font, you don't need to specify the font weight
-const fira = Fira_Code({ subsets: ["latin"] });
+const fira = Fira_Code({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-fira",
+});
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <main className={fira.className}>
+      <main className={`${fira.variable} ${fira.className}`}>
         <Component {...pageProps} />
       </main>
-
       <Analytics />
     </>
   );

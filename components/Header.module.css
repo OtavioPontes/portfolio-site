@@ -1,46 +1,59 @@
 .container {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   align-items: center;
   background-image: var(--gradient);
-  justify-content: flex-start;
+  padding: 4rem 1.5rem 2rem;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 70rem;
+  gap: 2rem;
+}
+
+.avatar {
+  display: flex;
+  transition: filter 0.3s ease;
 }
 
 .avatar:hover {
   filter: drop-shadow(0px 5px 5px var(--blue));
-  transition: all 0.3s ease 0s;
-}
-
-.spacer {
-  height: 2rem;
-}
-.space {
-  height: 4rem;
 }
 
 .name {
   text-align: center;
-}
-.name:hover {
-  text-shadow: 1px 4px 20px var(--purple);
-  transition: all 0.3s ease 0s;
+  font: var(--headline4);
+  transition: text-shadow 0.3s ease;
 }
 
-.textSection {
-  width: 60vw;
-  text-align: justify;
-  line-height: 4rem;
+.name:hover {
+  text-shadow: 1px 4px 20px var(--purple);
 }
 
 .title {
   text-align: center;
   color: var(--blue);
+  font: var(--headline3);
+  transition: text-shadow 0.3s ease;
 }
+
 .title:hover {
   text-shadow: 1px 4px 20px var(--blue);
-  transition: all 0.3s ease 0s;
 }
+
+.textSection {
+  width: 100%;
+  max-width: 60rem;
+  text-align: justify;
+  line-height: 2.2;
+  margin-top: 2rem;
+}
+
 .text {
   color: var(--white);
   font: var(--headline6);
@@ -50,6 +63,7 @@
   color: var(--pink);
   font: var(--headline5);
 }
+
 .textHighlightedBlue {
   color: var(--blue);
   font: var(--headline5);
@@ -57,8 +71,10 @@
 
 .divEmail {
   display: flex;
-  align-self: flex-end;
-  margin: 2rem 10rem 6rem 0;
+  width: 100%;
+  max-width: 60rem;
+  justify-content: flex-end;
+  margin-top: 3rem;
 }
 
 .email {
@@ -66,48 +82,41 @@
   font: var(--body2);
   letter-spacing: 6px;
   text-shadow: 1px 4px 20px var(--purple);
+  transition: font 0.3s ease;
+  word-break: break-word;
 }
 
 .email:hover {
   font: var(--headline6);
-  transition: all 0.3s ease 0s;
 }
 
-@media only screen and (max-width: 768px) {
-  /* For tablets: */
-
-  .title {
-    width: 100vw;
-    font: var(--headline5);
-  }
-  .name {
-    font: var(--headline6);
+@media (max-width: 768px) {
+  .container {
+    padding: 3rem 1rem 1.5rem;
   }
 
-  .email {
-    font: var(--overline);
-    word-break: break-all;
-  }
-  .divEmail {
-    padding: 0rem 2rem 0rem 2rem;
-    justify-content: center;
-    align-self: center;
-    margin-right: 0;
-    margin-left: 0;
+  .inner {
+    gap: 1.5rem;
   }
 
   .textSection {
-    line-height: 2rem;
+    line-height: 1.8;
+    text-align: left;
   }
 
-  .text {
-    font: var(--body2);
+  .divEmail {
+    justify-content: center;
+    margin-top: 2rem;
   }
 
-  .textHighlighted {
-    font: var(--body1);
+  .email {
+    letter-spacing: 3px;
   }
-  .textHighlightedBlue {
-    font: var(--body1);
+}
+
+@media (max-width: 480px) {
+  .email {
+    letter-spacing: 2px;
+    font: var(--overline);
   }
 }
